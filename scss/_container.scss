@@ -77,3 +77,20 @@ a {
         color: #0a58ca;
     }
 }
+
+$bwscale: (
+    100: #ffffff,
+    200: #DFE3E7,
+    300: #CBCFD2,
+    400: #B3B6B9,
+    1000: 0px,
+    2000: 10px,
+    3000: 20px,
+    4000: 30px,
+    5000: 40px, 
+);
+
+.important-events {
+    color: map-get($bwscale, 100);
+    margin: map-get($bwscale, 2000);
+}

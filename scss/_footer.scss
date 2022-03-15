@@ -5,3 +5,14 @@ footer {
     padding-left: 0px;
     background-color: rgb(122, 39, 39);
 }
+
+$color: white;
+
+@mixin fontsize {
+    font-size: 0.8rem;
+}
+
+.footer__by {
+    @include fontsize;
+    color: $color;
+}

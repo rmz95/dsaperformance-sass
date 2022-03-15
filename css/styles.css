@@ -6,6 +6,10 @@ footer {
   padding-left: 0px;
   background-color: #7a2727; }
 
+.footer__by {
+  font-size: 0.8rem;
+  color: white; }
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -62,6 +66,10 @@ a {
   text-decoration: underline; }
   a:hover {
     color: #0a58ca; }
+
+.important-events {
+  color: #ffffff;
+  margin: 10px; }
 
 :root {
   --bs-blue: #0d6efd;

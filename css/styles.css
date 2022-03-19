@@ -10,6 +10,10 @@ footer {
   font-size: 0.8rem;
   color: white; }
 
+.footer__by2 {
+  font-size: 0.8rem;
+  color: black; }
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -70,6 +74,28 @@ a {
 .important-events {
   color: #ffffff;
   margin: 10px; }
+
+.img__Galeria {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.img__Columna1 {
+  margin: 30px 10px 50px 0px;
+  padding: 0px 0px 0px 40px; }
+
+.img__Columna2 {
+  margin: 30px 10px 50px 50px; }
+
+.img__Columna3 {
+  margin: 30px 10px 50px 50px;
+  padding: 0px 40px 0px 0px; }
+
+.hover01 figure img {
+  transform: scale(1);
+  transition: .5s ease-in-out; }
+  .hover01 figure img:hover {
+    transform: scale(1.2); }
 
 :root {
   --bs-blue: #0d6efd;

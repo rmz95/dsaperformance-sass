@@ -66,10 +66,10 @@ ul {
     margin-bottom: 1rem; }
 
 a {
-  color: blue;
+  color: white;
   text-decoration: underline; }
   a:hover {
-    color: #0a58ca; }
+    color: #ee1d23; }
 
 .important-events {
   color: #ffffff;

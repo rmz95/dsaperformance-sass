@@ -1,42 +1,23 @@
-const productsandservices = new Array ("Suspension Regulable", "Suspension Fija", "Espirales Progresivos", "Tren Delantero", "1/4 de Milla")
-let p = productsandservices[0];
-let s = productsandservices[3];
-let length = productsandservices.length;
+const productos =  [{   id: 1, productos: "Regulables"},
+                    {   id: 2, productos: "Progresivos"},
+                    {   id: 3, productos: "1/4 de Milla"},
+                    {   id: 4, productos: "Amortiguadores"},
+                    {   id: 5, productos: "Espirales"},
+                    {   id: 6, productos: "Tren Delantero"},
+                    {   id: 7, productos: "Frenos"}]
 
-console.log(productsandservices)
+const servicios =  [{   id: 8, servicios: "Detailing"},
+                    {   id: 9, servicios: "Lavado y Limpieza"},
+                    {   id: 10, servicios: "Tratamiento de Acrilicos"},
+                    {   id: 11, servicios: "Tratamiento de Espirales y Amortiguadores"},
+                    {   id: 12, servicios: "Tratamiento de Ceramicos"}]
 
-// -------------------------------------------------------------------
-
-class Producto {
-    constructor(nombre, precio) {
-        this.nombre  = nombre.toUpperCase();
-        this.precio  = parseFloat(precio);
-        this.vendido = false;
-    }
-    manoObra() {
-        this.precio = this.precio * 1.50;
-    }
+for (const producto of productos) {
+console.log(producto.id);
+console.log(producto.productos);
 }
 
-const productos = [];
-productos.push(new Producto("Regulable", "35000"));
-productos.push(new Producto("Fija", "35000"));
-productos.push(new Producto("Progresivos", "20000"));
-
-for (const producto of productos)
-    producto.manoObra();
-
-console.log(productos)
-
-// -----------------------------------------------------------------------------
-
-const servicios =  [{ id: 1, servicios: "Lavado y Limpieza" },
-                    { id: 2, servicios: "Tratamiento de ceramicos" },
-                    { id: 3, servicios: "Limpieza de tapizados" }];
-
-for (const producto of servicios) {
-    console.log(producto.id);
-    console.log(producto.servicios);
+for (const servicio of servicios)  {
+    console.log(servicio.id);
+    console.log(servicio.servicios);
 }
-
-// --------------------------------------------------------------------------

@@ -22,3 +22,47 @@ for (const servicio of servicios)  {
     console.log(servicio.precio);
 }
 
+let comprar = document.getElementById("btnbuy")
+comprar.onclick = () => {console.log("Tu compra ha sido existosa")}
+
+let regulables = document.getElementById("regulables")
+regulables.onclick = () => {console.log("Click")}
+
+let progresivos = document.getElementById("progresivos")
+progresivos.onclick = () => {console.log("Agregado Progresivos al carrito")}
+
+let milla = document.getElementById("14milla")
+milla.onclick = () => {console.log("1/4 de milla agregado al carrito")}
+
+let amorti = document.getElementById("amorti")
+amorti.addEventListener("click", respuestaClick)
+function respuestaClick() {
+    console.log("Agregado Amortiguadores al carrito");
+}
+
+let espirales = document.getElementById("espirales")
+espirales.onclick = () => {console.log("Agregado espirales al carrito")}
+
+let trendelantero = document.getElementById("trendelantero")
+trendelantero.onclick = () => {console.log("Agregado tren delantero al carrito")}
+
+let frenos = document.getElementById("frenos")
+frenos.onclick = () => {console.log("Agregado frenos al carrito")}
+
+let detailing = document.getElementById("detail")
+detailing.onclick = () => {console.log("Agregado servicio de Detailing al carrito")}
+
+let lavado = document.getElementById("lavado")
+lavado.onclick = () => {console.log("Agregado servicio de Lavado y Limpieza al carrito")}
+
+let acrilico = document.getElementById("acrilico")
+acrilico.onclick = () => {console.log("Agregado servicio de Tratamientos de Acrilicos al carrito")}
+
+let espiamorti = document.getElementById("espiamor")
+espiamorti.onclick = () => {console.log("Agregado el servicio de Tratamiento de Espirales y Amortiguadores al carrito")}
+
+let ceramicos = document.getElementById("ceramicos")
+ceramicos.onclick = () => {console.log("Agregado servicio de Tratamiento de Ceramicos al carrito")}
+
+let compra2 = document.getElementById("btnbuy2")
+compra2.onclick = () => {console.log("Tu compra de los servicios ha sido existosa")}

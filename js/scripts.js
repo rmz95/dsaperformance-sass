@@ -66,3 +66,4 @@ ceramicos.onclick = () => {console.log("Agregado servicio de Tratamiento de Cera
 
 let compra2 = document.getElementById("btnbuy2")
 compra2.onclick = () => {console.log("Tu compra de los servicios ha sido existosa")}
+

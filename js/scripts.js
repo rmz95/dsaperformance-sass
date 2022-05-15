@@ -1,3 +1,5 @@
+// Variables definidas de cada producto y servicio
+
 const productos =  [{   id: 1, productos: "Regulables", precio: 37000},
                     {   id: 2, productos: "Progresivos", precio: 25000},
                     {   id: 3, productos: "1/4 de Milla", precio: 30000},
@@ -22,11 +24,13 @@ for (const servicio of servicios)  {
     console.log(servicio.precio);
 }
 
+// ID's de cada producto, servicio y boton Comprar 
+
 let comprar = document.getElementById("btnbuy")
 comprar.onclick = () => {console.log("Tu compra ha sido existosa")}
 
 let regulables = document.getElementById("regulables")
-regulables.onclick = () => {console.log("Click")}
+regulables.onclick = () => {console.log("Agregado Regulables al carrito")}
 
 let progresivos = document.getElementById("progresivos")
 progresivos.onclick = () => {console.log("Agregado Progresivos al carrito")}
@@ -67,3 +71,15 @@ ceramicos.onclick = () => {console.log("Agregado servicio de Tratamiento de Cera
 let compra2 = document.getElementById("btnbuy2")
 compra2.onclick = () => {console.log("Tu compra de los servicios ha sido existosa")}
 
+
+// Local Storage y JSON
+
+const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor)};
+
+for (const producto of productos){
+    guardarLocal("listaProductos", JSON.stringify(productos));
+}
+
+for (const servicio of servicios){
+    guardarLocal("listaServicios", JSON.stringify(servicios))
+}

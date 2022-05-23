@@ -27,7 +27,26 @@ for (const servicio of servicios)  {
 // ID's de cada producto, servicio y boton Comprar 
 
 let comprar = document.getElementById("btnbuy")
-comprar.onclick = () => {console.log("Tu compra ha sido existosa")}
+comprar.addEventListener("click", respuestaBuy)
+    function respuestaBuy() {
+        Swal.fire({
+            title: '¿Estas seguro de comprar estos productos?',
+            text: "Si no esta seguro, click en Cancelar",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, estoy seguro.'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Hecho!',
+                'Tu compra ha sido procesada',
+                'success'
+                )
+            }
+        })
+    }
 
 let regulables = document.getElementById("regulables")
 regulables.onclick = () => {console.log("Agregado Regulables al carrito")}
@@ -40,8 +59,16 @@ milla.onclick = () => {console.log("1/4 de milla agregado al carrito")}
 
 let amorti = document.getElementById("amorti")
 amorti.addEventListener("click", respuestaClick)
-function respuestaClick() {
-    console.log("Agregado Amortiguadores al carrito");
+    function respuestaClick() {
+        console.log("Agregado Amortiguadores al carrito");
+    
+    // function unclick(){
+    //     Selection(false);
+    //     this.onclick = respuestaClick;
+    // }
+    //     // if (respuestaClick >= "2"){
+    //     //     console.log("Amortiguadores eliminado del carrito");
+    //     // }
 }
 
 let espirales = document.getElementById("espirales")
@@ -69,7 +96,41 @@ let ceramicos = document.getElementById("ceramicos")
 ceramicos.onclick = () => {console.log("Agregado servicio de Tratamiento de Ceramicos al carrito")}
 
 let compra2 = document.getElementById("btnbuy2")
-compra2.onclick = () => {console.log("Tu compra de los servicios ha sido existosa")}
+compra2.addEventListener("click", respuestaBuy)
+    function respuestaBuy() {
+        Swal.fire({
+            title: '¿Estas seguro de comprar estos servicios?',
+            text: "Si no esta seguro, click en Cancelar",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, estoy seguro.'
+
+            }).then((result) => {
+            
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Hecho!',
+                'Tu compra ha sido procesada',
+                'success'
+                )
+            }
+            else if (
+                
+                result.dismiss === Swal.DismissReason.cancel
+                ) {
+                swalWithBootstrapButtons.fire(
+                    'Cancelled',
+                    'Your imaginary file is safe :)',
+                    'error'
+                )
+                }
+            })
+        }
+
+let checks = document.querySelectorAll('.valores');
+
 
 
 // Local Storage y JSON
@@ -83,3 +144,5 @@ for (const producto of productos){
 for (const servicio of servicios){
     guardarLocal("listaServicios", JSON.stringify(servicios))
 }
+
+// const carrito = JSON.parse(localStorage.getItem('carrito')) || []

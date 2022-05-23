@@ -114,20 +114,9 @@ compra2.addEventListener("click", respuestaBuy)
                 'Hecho!',
                 'Tu compra ha sido procesada',
                 'success'
-                )
-            }
-            else if (
-                
-                result.dismiss === Swal.DismissReason.cancel
-                ) {
-                swalWithBootstrapButtons.fire(
-                    'Cancelled',
-                    'Your imaginary file is safe :)',
-                    'error'
-                )
-                }
-            })
-        }
+                )}
+        })
+    }
 
 let checks = document.querySelectorAll('.valores');
 

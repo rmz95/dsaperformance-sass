@@ -71,6 +71,20 @@ amorti.addEventListener("click", respuestaClick)
     //     // }
 }
 
+
+let btnCheck = document.querySelectorAll('.valores')
+
+for (let check of btnCheck){
+    check.addEventListener("click", (evt)=>{
+        if(evt.currentTarget.getAttribute("checked")){
+            console.log("poner el check")
+        }else {
+            console.log("sacar check")
+        }
+    })
+}
+
+
 let espirales = document.getElementById("espirales")
 espirales.onclick = () => {console.log("Agregado espirales al carrito")}
 

@@ -149,3 +149,20 @@ for (const servicio of servicios){
 }
 
 // const carrito = JSON.parse(localStorage.getItem('carrito')) || []
+
+
+// Fetch y data.JSON
+
+fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            title: 'Regulables',
+            body: 'Suspension regulables',
+            userId: 21,
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+    })
+    .then((response) => response.json())
+    .then((data) => console.log(data))

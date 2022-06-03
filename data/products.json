@@ -1,0 +1,13 @@
+[   {   "id": 1, "producto": "Regulables", "precio": 37000},
+    {   "id": 2, "producto": "Progresivos", "precio": 25000},
+    {   "id": 3, "producto": "1/4 de Milla", "precio": 30000},
+    {   "id": 4, "producto": "Amortiguadores", "precio": 45000},
+    {   "id": 5, "producto": "Espirales", "precio": 17000},
+    {   "id": 6, "producto": "Tren Delantero", "precio": 60000},
+    {   "id": 7, "producto": "Frenos", "precio": 40000},
+    {   "id": 8, "servicio": "Detailing", "precio": 10000},
+    {   "id": 9, "servicio": "Lavado y Limpieza", "precio": 6500},
+    {   "id": 10, "servicio": "Tratamiento de Acrilicos", "precio": 5000},
+    {   "id": 11, "servicio": "Tratamiento de Espirales y Amortiguadores", "precio": 7000},
+    {   "id": 12, "servicio": "Tratamiento de Ceramicos", "precio": 8500}
+]

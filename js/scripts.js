@@ -153,16 +153,11 @@ for (const servicio of servicios){
 
 // Fetch y data.JSON
 
-fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        body: JSON.stringify({
-            title: 'Regulables',
-            body: 'Suspension regulables',
-            userId: 21,
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
+fetch("../data/products.json")
+    .then((res) => {
+        console.log(res)
+        return res.json()
     })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
+    .then((respuesta)=>{
+        console.log(respuesta)
+    })

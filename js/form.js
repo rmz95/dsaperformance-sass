@@ -1,4 +1,4 @@
-let contacto = document.querySelectorAll("#contactForm");
+let contacto = document.querySelector("#contactForm");
 contacto.addEventListener("submit", validarFormulario, confirmacionFormulario);
     function confirmacionFormulario(){
         Swal.fire({

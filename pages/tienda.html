@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="DSA Performance. Más de 10 años en el rubro. Tienda" />
+        <meta name="author" content="" />
+        <meta name="keywords" content="dsa, dsa suspensiones, dsa performance, productos de dsa, dsa productos, servicios de dsa, servicios dsa, servicios dsa, productos dsa, tienda dsa, tienda, dsa tienda, tienda productos dsa">
+        <title>DSA PERFORMANCE - Tienda</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/stock.js"></script>
+        <script defer src="../js/modal.js"></script>
+    </head>
+<body>
+    <!-- Navbar con Carrito -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-4 fs-5 fw-bold">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/images/logodsa.png" alt="dsaperformancelogo" width="250px" height="75px"></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./imagenes.html">Imagenes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><button class="btn btn-secondary py-0 mt-0 mb-0"><img src="../assets/icons/carrito32px.png" alt="carritocompras"><span class="ps-2 pt-4">Mi Carrito</span></button></a></li> -->
+                </ul>
+                <button id="boton-carrito" class="btn btn-secondary py-0 mt-0 mx-2 mb-0"><img src="../assets/icons/carrito32px.png" alt="carritocompras"><span id="contadorCarrito" class="mx-3 pt-1">0</span></button>
+            </div>
+        </div>
+    </nav>
+        <!-- Tienda -->
+        <main id="contenedor-productos" class="container px-4 px-lg-5 py-3">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h1 class="mt-0">Tienda DSA</h1>
+                        <hr class="divider">
+                        <p class="text-muted mb-5">En esta seccion podrás comprar nuestros productos y servicios. Los precios de nuestros productos ya tienen incorporados la mano de obra.</p>
+                    </div>
+                </div>
+        </main>
+        
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3 class="font-weight-light">Carrito</h3>
+                <button id="carritoCerrar" class="btn btn-secondary">Cerrar</button>
+                <div id="carrito-contenedor">
+                    <!-- <div class="productoEnCarrito">
+                        <p>Buzo 1</p>
+                        <p>Precio: $1200</p>
+                        <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                    </div> -->
+                </div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="boton-agregar btn btn-primary">Vaciar carrito</button>
+                <button id="btn-buy" class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+    <!-- Footer-->
+    <footer>
+        <div class="container px-4 px-lg-5 pt-4">
+            <p class="m-0 text-center footer__by2 fw-bold">Copyright &copy; DSA PEFORMANCE - 2022</p></div>
+            
+        <div class="container px-4 px-lg-5">
+                <div class="m-0 text-center text-white nav-link">
+                    <img src="../assets/icons/whatsapp.png" alt="whatsapp16px" class="pb-1"><span class="mx-2">11-3685-7276</span>
+                </div>
+                <div class="m-0 text-center text-white nav-link">
+                    <a href="https://www.facebook.com/DSA-Performance-Suspension-Detailing-768958393135304" class="text-decoration-none"><img src="../assets/icons/facebook.png" alt="facebook16px" class="pb-1"><span class="mx-2">DSA PERFORMANCE</span>
+                </div>
+                <div class="m-0 text-center text-white nav-link">
+                    <a href="https://www.instagram.com/aledsaok/" class="text-decoration-none"><img src="../assets/icons/instagram.png" alt="instagram16px"><span class="mx-2">aledsaok</a></span>
+                </div>
+                <div class="m-0 text-center py-1">
+                    <p class="fst-italic footer__by">by Luis Ramirez</p>
+                </div>
+        </div>
+    </footer>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

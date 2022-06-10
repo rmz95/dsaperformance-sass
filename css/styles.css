@@ -119,16 +119,19 @@ a {
   position: absolute;
   top: 15px;
   right: 15px;
-  font-size: 20px;
-  color: royalblue;
+  font-size: 15px;
+  color: #ee1d23;
   border: none;
-  background-color: white; }
+  background-color: var(--bs-dark); }
 
 .modal-carrito #carritoCerrar:hover {
   cursor: pointer; }
 
 .modal-carrito #carritoCerrar:focus {
   outline: none; }
+
+#contadorCarrito {
+  font-size: 20px; }
 
 .productoEnCarrito {
   border-left: 5px solid lightblue;
@@ -146,7 +149,7 @@ a {
   background-color: white;
   color: red;
   border: none;
-  font-size: 20px; }
+  font-size: 10px; }
 
 .boton-eliminar:hover {
   cursor: pointer; }

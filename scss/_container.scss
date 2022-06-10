@@ -151,10 +151,10 @@ $bwscale: (
     position: absolute;
     top: 15px;
     right: 15px;
-    font-size: 20px;
-    color: royalblue;
+    font-size: 15px;
+    color:rgb(238, 29, 35);
     border: none;
-    background-color: white;
+    background-color: var(--bs-dark);
 }
 .modal-carrito #carritoCerrar:hover {
     cursor: pointer;
@@ -166,6 +166,10 @@ $bwscale: (
 //     padding-top: 10px;
     
 // }
+
+#contadorCarrito {
+    font-size: 20px;
+}
 
 .productoEnCarrito {
     border-left: 5px solid lightblue;
@@ -184,7 +188,7 @@ $bwscale: (
     background-color: white;
     color: red;
     border: none;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .boton-eliminar:hover {

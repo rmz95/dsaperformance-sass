@@ -41,9 +41,30 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
-botonComprar.addEventListener('click', (confirmacionCompra) => {
+botonComprar.addEventListener('click', () => {
     carrito.length = 0
     actualizarCarrito()
+
+    if (botonComprar, true){
+        Swal.fire({
+            title: '¿Estas seguro de comprar estos productos y/o servicios?',
+            text: "Si no esta seguro, click en Cancelar",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, estoy seguro.'
+
+            }).then((result) => {
+            
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Hecho!',
+                'Tu compra ha sido procesada',
+                'success'
+                )}
+        })
+    }
 })
 
 const lista = document.querySelector('#contenedor-productos')
@@ -113,11 +134,11 @@ const actualizarCarrito = () => {
         const div = document.createElement('div')
         div.className = ("productoEnCarrito")
         div.innerHTML = `
-        <p class="my-0">${prod.nombre}</p>
-        <p class="my-0">${prod.tipo}</p>
-        <p class="my-0">Precio:$${prod.precio}</p>
-        <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
-        <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar btn btn-secondary my-2">Eliminar</button>
+        <p class="my-3">${prod.nombre}</p>
+        <p class="my-3">${prod.tipo}</p>
+        <p class="my-3">Precio: $${prod.precio}</p>
+        <p class="my-3">Cantidad: <span id="cantidad" class="mx-1">${prod.cantidad}</span></p>
+        <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar btn btn-secondary my-1">Eliminar</button>
         `
 
         contenedorCarrito.appendChild(div)
@@ -139,23 +160,23 @@ const actualizarCarrito = () => {
 // let compra2 = document.querySelector("#btnbuy")
 // compra2.addEventListener("click", respuestaBuy);{
 //     function respuestaBuy() {
-//         Swal.fire({
-//             title: '¿Estas seguro de comprar estos servicios?',
-//             text: "Si no esta seguro, click en Cancelar",
-//             icon: 'warning',
-//             showCancelButton: true,
-//             confirmButtonColor: '#3085d6',
-//             cancelButtonColor: '#d33',
-//             confirmButtonText: 'Si, estoy seguro.'
+        // Swal.fire({
+        //     title: '¿Estas seguro de comprar estos servicios?',
+        //     text: "Si no esta seguro, click en Cancelar",
+        //     icon: 'warning',
+        //     showCancelButton: true,
+        //     confirmButtonColor: '#3085d6',
+        //     cancelButtonColor: '#d33',
+        //     confirmButtonText: 'Si, estoy seguro.'
 
-//             }).then((result) => {
+        //     }).then((result) => {
             
-//             if (result.isConfirmed) {
-//                 Swal.fire(
-//                 'Hecho!',
-//                 'Tu compra ha sido procesada',
-//                 'success'
-//                 )}
-//         })
+        //     if (result.isConfirmed) {
+        //         Swal.fire(
+        //         'Hecho!',
+        //         'Tu compra ha sido procesada',
+        //         'success'
+        //         )}
+        // })
 //     }
 // }
